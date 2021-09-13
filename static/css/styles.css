@@ -1,0 +1,81 @@
+.inicio {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #202529, springgreen);
+}
+
+.img_perfil {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.p_perfil {
+    color: greenyellow;
+}
+
+.p_perfil::after {
+    content: "";
+    padding-left: 3px;
+    border-right: 5px solid greenyellow;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.conoceme, .habilidades ,.proyectos, .contacto {
+    background-color: #202529;
+    min-height: 100vh;
+}
+
+.conoceme p {
+    text-align: justify;
+}
+
+.img_conoceme {
+    box-shadow: 10px 10px springgreen;
+}
+
+.btn_cv {
+    border: none;
+    color: #202529;
+    background-color: springgreen;
+    text-decoration: none;
+}
+
+.btn_cv:hover {
+    background-color: blue;
+}
+
+.modal_cv {
+    height: 90vh;
+    background-color: #70818f;
+}
+
+.btn_modal_close {
+    background-color: springgreen;
+    z-index: 1000;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+}
+
+.habilidades_dev {
+    border-radius: 10px;
+    background-color: springgreen;
+}
+
+.progress-bar {
+    background-color: springgreen;
+}
+
+.carousel {
+    box-shadow: 20px 20px springgreen;
+    width: 70%;
+}
