@@ -48,10 +48,6 @@
     text-decoration: none;
 }
 
-.btn_cv:hover {
-    background-color: blue;
-}
-
 .modal_cv {
     height: 90vh;
     background-color: #70818f;

@@ -83,18 +83,15 @@ function init() {
 }
 
 // image depending of screen size
-const heightOutput = document.querySelector('#height');
-const widthOutput = document.querySelector('#width');
 
 function reportWindowSize() {
-    heightOutput.textContent = window.innerHeight;
     if(window.innerWidth>500){
-        widthOutput.textContent = "PC " + window.innerWidth;
         $("#img_proy_1").attr("src", "static/img/proyectos/pc/xv.png");
+        $("#img_proy").attr("src", "static/img/proyectos/pc/projects.jpg");
     }
     else{
-        widthOutput.textContent = "Mobile " + window.innerWidth;
         $("#img_proy_1").attr("src", "static/img/proyectos/mobile/xv.jpg");
+        $("#img_proy").attr("src", "static/img/proyectos/mobile/projects.jpg");
     }
 }
 reportWindowSize();
